@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vrati Jain's personal portfolio website.">
+  <title>Vrati Jain | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home">Vrati Jain<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact" class="nav-contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Vrati Jain</h1>
+          <h2>B.Tech Student &amp; Aspiring Software Developer</h2>
+          <p class="hero-description">
+            I am a B.Tech student at JECRC University, Jaipur, with a growing interest in
+            programming, problem-solving, and technology. I am developing my skills in C++
+            and Java and enjoy learning new concepts by building projects and practicing code.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore My Projects</a>
+            <a class="button button-secondary" href="#contact">Contact Me</a>
+          </div>
+          <a class="github-shortcut" href="https://github.com/vratijain2412-beep" target="_blank" rel="noopener noreferrer">
+            Visit my GitHub profile ↗
+          </a>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-frame">
+            <!-- Put your photo in this folder and name it profile.jpg -->
+            <img src="profile.jpg" alt="Vrati Jain profile photograph" class="profile-photo" id="profile-photo">
+            <div class="photo-fallback" id="photo-fallback">
+              <span class="fallback-icon">VJ</span>
+              <strong>Add Your Photo</strong>
+              <small>Save your photo as <code>profile.jpg</code></small>
+            </div>
+          </div>
+          <p class="profile-caption">Learning. Building. Improving.</p>
+        </div>
+      </div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">GET TO KNOW ME</p>
+          <h2>About <span>Me</span></h2>
+        </div>
+        <div class="about-card">
+          <p>
+            My name is Vrati Jain, and I am pursuing a Bachelor of Technology (B.Tech) degree
+            at JECRC University in Jaipur, Rajasthan, India. I am interested in software
+            development and enjoy strengthening my programming fundamentals. I am currently
+            learning C++ and Java and aim to use these skills to create practical, helpful
+            applications while continuing to grow as a developer.
+          </p>
+          <p class="placeholder-note">
+            <strong>PLACEHOLDER:</strong> Add your hobbies, achievements, or a personal career goal here.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="education">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">MY LEARNING JOURNEY</p>
+          <h2>Education</h2>
+        </div>
+        <div class="education-grid">
+          <article class="info-card">
+            <div class="card-icon">01</div>
+            <p class="card-label">CURRENTLY PURSUING</p>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p>JECRC University</p>
+            <p class="muted">Jaipur, Rajasthan, India</p>
+            <p class="placeholder-note"><strong>PLACEHOLDER:</strong> Add your engineering branch and expected graduation year.</p>
+          </article>
+          <article class="info-card">
+            <div class="card-icon">02</div>
+            <p class="card-label">SCHOOL EDUCATION</p>
+            <h3>Class 12</h3>
+            <p>Passed with 86%</p>
+            <p class="muted">Senior Secondary Education</p>
+            <p class="placeholder-note"><strong>PLACEHOLDER:</strong> Add your school name and passing year.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'M LEARNING</p>
+          <h2>Technical <span>Skills</span></h2>
+        </div>
+        <ul class="skills-list">
+          <li><span class="skill-symbol">C++</span><span><strong>C++</strong><small>Programming fundamentals and problem-solving</small></span></li>
+          <li><span class="skill-symbol">Ja</span><span><strong>Java</strong><small>Core programming concepts</small></span></li>
+          <li><span class="skill-symbol">&lt;/&gt;</span><span><strong>Web Development</strong><small>HTML, CSS, and JavaScript used for this portfolio</small></span></li>
+        </ul>
+        <p class="muted skill-note">Add or remove skills as your experience grows.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p>
+          <h2>Featured <span>Projects</span></h2>
+          <p class="section-intro">Explore some of my learning and development projects.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">PROJECT 01</span><span class="project-mark">↗</span></div>
+            <h3>Student Reading List</h3>
+            <p>A web project designed to help students organize and keep track of their reading material.</p>
+            <div class="tag-row"><span>Web Project</span><span>Student Tool</span></div>
+            <a class="project-link" href="https://student-reading-list-7igf.bolt.host" target="_blank" rel="noopener noreferrer">Open Project <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">PROJECT 02</span><span class="project-mark">↗</span></div>
+            <h3>Python Program Collection</h3>
+            <p>A collection of Python programs for practicing programming fundamentals and problem-solving.</p>
+            <div class="tag-row"><span>Python</span><span>Practice</span></div>
+            <a class="project-link" href="https://pythonprogramcollection-hkl248qgs-rakheejain593-create.vercel.app" target="_blank" rel="noopener noreferrer">Open Project <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-top"><span class="project-number">PROJECT 03</span><span class="project-mark">↗</span></div>
+            <h3>Quiz Website</h3>
+            <p>An online quiz project for answering questions and practicing knowledge in an interactive format.</p>
+            <div class="tag-row"><span>Web Project</span><span>Quiz</span></div>
+            <a class="project-link" href="https://quiz-sandy-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Open Project <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="github">
+      <div class="container github-panel">
+        <div>
+          <p class="eyebrow">CODE &amp; COLLABORATION</p>
+          <h2>Find me on <span>GitHub</span></h2>
+          <p>Explore my repositories, coding practice, and projects on GitHub.</p>
+        </div>
+        <a class="button button-primary" href="https://github.com/vratijain2412-beep" target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a>
+      </div>
+      <div class="container github-placeholder">
+        <strong>PLACEHOLDER:</strong> Add links to specific GitHub repositories here as you publish more projects.
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">LET'S CONNECT</p>
+          <h2>Contact <span>Me</span></h2>
+          <p class="section-intro">Feel free to reach out about projects, learning, or collaboration.</p>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:vratijain2412@gmail.com">
+            <span class="contact-icon">@</span>
+            <span><small>EMAIL</small><strong>vratijain2412@gmail.com</strong></span>
+          </a>
+          <a class="contact-card" href="https://github.com/vratijain2412-beep" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">GH</span>
+            <span><small>GITHUB</small><strong>vratijain2412-beep</strong></span>
+          </a>
+          <a class="contact-card" href="https://share.google/Up10b1x7ts7wyloFn" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon">⌖</span>
+            <span><small>LOCATION</small><strong>Beawar, Rajasthan, India</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="brand" href="#home">Vrati Jain<span>.</span></a>
+      <p>© <span id="current-year"></span> Vrati Jain. Built with HTML, CSS &amp; JavaScript.</p>
+      <a href="#home" class="back-top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
